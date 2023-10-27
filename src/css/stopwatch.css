@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.content.stopwatch {
+    width: 300px;
+    min-height: 150px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content.stopwatch .stopwatch_time {
+    padding: 11px 0;
+    background: #efefef;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+}
+
+.content.stopwatch .stopwatch_buttons {
+    padding: 20px;
+    text-align: center;
+}
+
+.content.stopwatch .stopwatch_buttons .reset_btn,
+.content.stopwatch .stopwatch_buttons .record_btn {
+    width: 100px;
+    padding: 8px;
+    background-color: #677cf1;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.content.stopwatch .record_list .item {
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.content.stopwatch .record_list .item + .item {
+    border-top: 1px solid #000;
+}
+
+.content.stopwatch .record_list .item .time{
+    color: #333;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.content.stopwatch .record_list .item .delete_btn {
+    float: right;
+    width: 50px;
+    background-color: #f00;
+    border: 2px solid #000;
+    color: #fff;
+    line-height: 26px;
+}
