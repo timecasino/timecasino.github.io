@@ -3,8 +3,9 @@
 @import "./reset.css";
 
 .stopwatch {
+    overflow-y: auto;
     height: 100%;
-    padding: 15px 25px;
+    padding: 15px 25px 30px;
     background-image: url('../img/img_bg.png');
     background-size: 550px auto;
     box-sizing: border-box;
@@ -50,6 +51,7 @@
     border-radius: 12px;
     background-color: #f2f2f2;
     font-weight: 600;
+    color: #222;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -67,4 +69,50 @@
     width: 100%;
     height: auto;
     vertical-align: top;
+}
+
+.stopwatch .info_area {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+    word-break: keep-all;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+}
+.stopwatch .info_area .point {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.stopwatch .info_area .alert {
+    color: #FE3C4C;
+}
+
+.stopwatch .info_area .link {
+    color: #222;
+    text-decoration: underline;
+}
+
+.stopwatch .info_area .qrcode {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.stopwatch .info_area .qrcode .qr_img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.stopwatch .info_area .qrcode_download {
+    display: block;
+    color: #222;
+    text-decoration: underline;
 }
